@@ -1,0 +1,86 @@
+:root {
+    --mainfont: Open Sans;
+    --base-color: #6CAE75;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body {
+    display: flex;
+    font-family: var(--mainfont);
+}
+
+aside {
+    background-color: #6CAE75;
+    height: 728px;
+    width: 82px;
+    margin: 20px 54px 20px 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    height: 60px;
+    width: 73px;
+    border-radius: 20px 0px 0px 20px;
+    margin-left: 11px;
+}
+
+.home-icon img{
+    margin-top: 50px;
+}
+
+.calendar-icon img {
+    margin-left: -10px;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+}
+.icon:nth-child(1),
+.icon:nth-child(2),
+.icon:nth-child(3) {
+    margin-top: 40px;
+}
+
+.icon:nth-child(4) {
+    margin-top: 325px;
+}
+
+header {
+    display: flex;
+    height: 118px;
+    width: 804px;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.logo img {
+    width: 200px;
+    height: 36px;
+    margin-right: 35px;
+}
+
+section {
+    border: 1px solid blue;
+    height: 622px;
+    width: 836px;
+}
