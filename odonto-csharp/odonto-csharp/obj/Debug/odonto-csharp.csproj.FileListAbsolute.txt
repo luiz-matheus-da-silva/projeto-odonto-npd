@@ -20,3 +20,16 @@ E:\NPD\odonto\odonto-csharp\odonto-csharp\obj\Debug\odonto-csharp.exe
 E:\NPD\odonto\odonto-csharp\odonto-csharp\obj\Debug\odonto-csharp.pdb
 E:\NPD\odonto\odonto-csharp\odonto-csharp\obj\Debug\odonto_csharp.FrmPrincipal.resources
 E:\NPD\odonto\odonto-csharp\odonto-csharp\obj\Debug\odonto_csharp.FrmNovoCadastro.resources
+C:\Users\Pichau\Documents\GitHub\projeto-odonto-npd\odonto-csharp\odonto-csharp\bin\Debug\odonto-csharp.exe.config
+C:\Users\Pichau\Documents\GitHub\projeto-odonto-npd\odonto-csharp\odonto-csharp\bin\Debug\odonto-csharp.exe
+C:\Users\Pichau\Documents\GitHub\projeto-odonto-npd\odonto-csharp\odonto-csharp\bin\Debug\odonto-csharp.pdb
+C:\Users\Pichau\Documents\GitHub\projeto-odonto-npd\odonto-csharp\odonto-csharp\obj\Debug\odonto-csharp.csproj.AssemblyReference.cache
+C:\Users\Pichau\Documents\GitHub\projeto-odonto-npd\odonto-csharp\odonto-csharp\obj\Debug\odonto-csharp.csproj.SuggestedBindingRedirects.cache
+C:\Users\Pichau\Documents\GitHub\projeto-odonto-npd\odonto-csharp\odonto-csharp\obj\Debug\odonto_csharp.FrmNovoCadastro.resources
+C:\Users\Pichau\Documents\GitHub\projeto-odonto-npd\odonto-csharp\odonto-csharp\obj\Debug\odonto_csharp.FrmPrincipal.resources
+C:\Users\Pichau\Documents\GitHub\projeto-odonto-npd\odonto-csharp\odonto-csharp\obj\Debug\odonto_csharp.Properties.Resources.resources
+C:\Users\Pichau\Documents\GitHub\projeto-odonto-npd\odonto-csharp\odonto-csharp\obj\Debug\odonto-csharp.csproj.GenerateResource.cache
+C:\Users\Pichau\Documents\GitHub\projeto-odonto-npd\odonto-csharp\odonto-csharp\obj\Debug\odonto-csharp.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Documents\GitHub\projeto-odonto-npd\odonto-csharp\odonto-csharp\obj\Debug\odonto-csharp.exe
+C:\Users\Pichau\Documents\GitHub\projeto-odonto-npd\odonto-csharp\odonto-csharp\obj\Debug\odonto-csharp.pdb
+C:\Users\Pichau\Documents\GitHub\projeto-odonto-npd\odonto-csharp\odonto-csharp\obj\Debug\odonto_csharp.frmConsultaPacientes.resources
