@@ -52,5 +52,11 @@ namespace odonto_csharp
             fNovoCadastro = new FrmNovoCadastro();
             fNovoCadastro.ShowDialog();
         }
+
+        private void btnPacientes_Click(object sender, EventArgs e)
+        {
+            frmConsultaPacientes fConsultaPacientes = new frmConsultaPacientes();
+            fConsultaPacientes.ShowDialog();
+        }
     }
 }
