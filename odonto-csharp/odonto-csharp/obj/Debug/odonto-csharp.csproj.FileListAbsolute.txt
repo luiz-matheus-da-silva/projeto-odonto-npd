@@ -19,3 +19,4 @@ E:\NPD\odonto\odonto-csharp\odonto-csharp\obj\Debug\odonto-csharp.csproj.CoreCom
 E:\NPD\odonto\odonto-csharp\odonto-csharp\obj\Debug\odonto-csharp.exe
 E:\NPD\odonto\odonto-csharp\odonto-csharp\obj\Debug\odonto-csharp.pdb
 E:\NPD\odonto\odonto-csharp\odonto-csharp\obj\Debug\odonto_csharp.FrmPrincipal.resources
+E:\NPD\odonto\odonto-csharp\odonto-csharp\obj\Debug\odonto_csharp.FrmNovoCadastro.resources
