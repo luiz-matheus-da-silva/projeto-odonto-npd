@@ -77,7 +77,7 @@ namespace Class1 {
                         cmd.ExecuteNonQuery();
                     }
                 } catch (Exception ex) {
-                    MessageBox.Show("Erro ao cadastrar: O NÚMERO DO PRONTUÁRIO JA CONSTA EM OUTRO CADASTRO " + ex.Message);
+                    MessageBox.Show("Erro ao cadastrar: O NÚMERO DO PRONTUÁRIO JA CONSTA EM OUTRO CADASTRO \n" + ex.Message);
                 } finally {
                     MessageBox.Show("Cadastro feito com sucesso!");
                     ConexaoBanco().Close();
