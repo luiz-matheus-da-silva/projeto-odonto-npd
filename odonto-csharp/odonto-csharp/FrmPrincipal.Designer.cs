@@ -71,11 +71,11 @@
             // txtDataHora
             // 
             this.txtDataHora.AutoSize = true;
-            this.txtDataHora.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDataHora.ForeColor = System.Drawing.Color.White;
             this.txtDataHora.Location = new System.Drawing.Point(35, 71);
             this.txtDataHora.Name = "txtDataHora";
-            this.txtDataHora.Size = new System.Drawing.Size(58, 19);
+            this.txtDataHora.Size = new System.Drawing.Size(57, 20);
             this.txtDataHora.TabIndex = 3;
             this.txtDataHora.Text = "label1";
             this.txtDataHora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -85,7 +85,7 @@
             this.btnPacientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPacientes.FlatAppearance.BorderSize = 0;
             this.btnPacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPacientes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPacientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPacientes.ForeColor = System.Drawing.Color.White;
             this.btnPacientes.Image = ((System.Drawing.Image)(resources.GetObject("btnPacientes.Image")));
             this.btnPacientes.Location = new System.Drawing.Point(-116, 203);
@@ -94,20 +94,21 @@
             this.btnPacientes.TabIndex = 2;
             this.btnPacientes.Text = "                               Pacientes";
             this.btnPacientes.UseVisualStyleBackColor = true;
+            this.btnPacientes.Click += new System.EventHandler(this.btnPacientes_Click);
             // 
             // btnNovoCadastro
             // 
             this.btnNovoCadastro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNovoCadastro.FlatAppearance.BorderSize = 0;
             this.btnNovoCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNovoCadastro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovoCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNovoCadastro.ForeColor = System.Drawing.Color.White;
             this.btnNovoCadastro.Image = ((System.Drawing.Image)(resources.GetObject("btnNovoCadastro.Image")));
             this.btnNovoCadastro.Location = new System.Drawing.Point(-116, 143);
             this.btnNovoCadastro.Name = "btnNovoCadastro";
             this.btnNovoCadastro.Size = new System.Drawing.Size(316, 36);
             this.btnNovoCadastro.TabIndex = 1;
-            this.btnNovoCadastro.Text = "                                        Novo Cadastro";
+            this.btnNovoCadastro.Text = "                                 Novo Cadastro";
             this.btnNovoCadastro.UseVisualStyleBackColor = true;
             this.btnNovoCadastro.Click += new System.EventHandler(this.btnNovoCadastro_Click);
             // 

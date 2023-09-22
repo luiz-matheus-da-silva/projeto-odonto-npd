@@ -25,6 +25,7 @@
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNovoCadastro));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblTratamento = new System.Windows.Forms.Label();
             this.lblObservacoes = new System.Windows.Forms.Label();
             this.txtObservacoes = new System.Windows.Forms.RichTextBox();
             this.dateCadastro = new System.Windows.Forms.DateTimePicker();
@@ -35,6 +36,8 @@
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.numProntuario = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblCadastroDePaciente = new System.Windows.Forms.Label();
             this.cbxTratamento = new System.Windows.Forms.ComboBox();
             this.mtbTelefoneRecado = new System.Windows.Forms.MaskedTextBox();
@@ -51,10 +54,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.numDenteExtracao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numIdade)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numProntuario)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lblTratamento);
             this.panel1.Controls.Add(this.lblObservacoes);
             this.panel1.Controls.Add(this.txtObservacoes);
             this.panel1.Controls.Add(this.dateCadastro);
@@ -80,8 +85,17 @@
             this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1050, 730);
+            this.panel1.Size = new System.Drawing.Size(1050, 678);
             this.panel1.TabIndex = 0;
+            // 
+            // lblTratamento
+            // 
+            this.lblTratamento.AutoSize = true;
+            this.lblTratamento.Location = new System.Drawing.Point(141, 332);
+            this.lblTratamento.Name = "lblTratamento";
+            this.lblTratamento.Size = new System.Drawing.Size(122, 22);
+            this.lblTratamento.TabIndex = 22;
+            this.lblTratamento.Text = "Tratamento:";
             // 
             // lblObservacoes
             // 
@@ -96,7 +110,7 @@
             // 
             this.txtObservacoes.Location = new System.Drawing.Point(269, 413);
             this.txtObservacoes.Name = "txtObservacoes";
-            this.txtObservacoes.Size = new System.Drawing.Size(690, 220);
+            this.txtObservacoes.Size = new System.Drawing.Size(690, 152);
             this.txtObservacoes.TabIndex = 20;
             this.txtObservacoes.Text = "\n";
             // 
@@ -148,7 +162,7 @@
             this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrar.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.btnCadastrar.FlatAppearance.BorderSize = 3;
-            this.btnCadastrar.Location = new System.Drawing.Point(798, 653);
+            this.btnCadastrar.Location = new System.Drawing.Point(796, 595);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(165, 59);
             this.btnCadastrar.TabIndex = 14;
@@ -159,7 +173,8 @@
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.DarkRed;
-            this.btnCancelar.Location = new System.Drawing.Point(618, 653);
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar.Location = new System.Drawing.Point(616, 595);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(165, 59);
             this.btnCancelar.TabIndex = 13;
@@ -170,12 +185,36 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(91)))), ((int)(((byte)(140)))));
+            this.panel2.Controls.Add(this.numProntuario);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lblCadastroDePaciente);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1050, 100);
             this.panel2.TabIndex = 12;
+            // 
+            // numProntuario
+            // 
+            this.numProntuario.Location = new System.Drawing.Point(910, 37);
+            this.numProntuario.Maximum = new decimal(new int[] {
+            1000000000,
+            0,
+            0,
+            0});
+            this.numProntuario.Name = "numProntuario";
+            this.numProntuario.Size = new System.Drawing.Size(85, 31);
+            this.numProntuario.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(867, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 22);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "N°:";
             // 
             // lblCadastroDePaciente
             // 
@@ -283,6 +322,7 @@
             this.radioFuncionario.TabStop = true;
             this.radioFuncionario.Text = "Funcionário da UniCesumar";
             this.radioFuncionario.UseVisualStyleBackColor = true;
+            this.radioFuncionario.CheckedChanged += new System.EventHandler(this.radioFuncionario_CheckedChanged);
             // 
             // radioComunidade
             // 
@@ -303,7 +343,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 730);
+            this.ClientSize = new System.Drawing.Size(1050, 678);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.Coral;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -313,12 +353,14 @@
             this.Name = "FrmNovoCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Novo Cadastro - Sistema Odonto UniCesumar";
+            this.Load += new System.EventHandler(this.FrmNovoCadastro_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numDenteExtracao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numIdade)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numProntuario)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -347,5 +389,8 @@
         private System.Windows.Forms.RichTextBox txtObservacoes;
         private System.Windows.Forms.Label lblObservacoes;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.Label lblTratamento;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown numProntuario;
     }
 }
