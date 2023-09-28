@@ -11,7 +11,7 @@ namespace Class1 {
         private static object gridTabelaPacientes;
 
         private static SQLiteConnection ConexaoBanco() {
-            conexao = new SQLiteConnection("Data Source=E:\\odonto-csharp\\odonto-csharp\\banco\\banco_odonto");
+            conexao = new SQLiteConnection("Data Source=F:\\projeto-odonto-npd-main\\odonto-csharp\\odonto-csharp\\banco\\banco_odonto");
             conexao.Open();
             return conexao;
         }
@@ -63,8 +63,8 @@ namespace Class1 {
             public static void NovoPaciente(Pacientes p) {
                 try {
                     using (var cmd = ConexaoBanco().CreateCommand()) {
-                        cmd.CommandText = "INSERT INTO tb_pacientes (N_PRONTUARIO,T_NOMECOMPLETO,N_IDADE,T_TELEFONE,T_TELEFONERECADO,T_TRATAMENTO,N_EXTRACAO, T_OBSERVACAO, T_STATUS) " +
-                                          "VALUES (@prontuario,@nomecompleto,@idade,@telefone,@telefonerecado,@tratamento,@extracao,@observacao,@status)";
+                        cmd.CommandText = "INSERT INTO tb_pacientes ( N_PRONTUARIO,T_NOMECOMPLETO,N_IDADE,T_TELEFONE,T_TELEFONERECADO,T_TRATAMENTO,N_EXTRACAO, T_OBSERVACAO, T_STATUS, T_DATA) " +
+                                          "VALUES (@prontuario,@nomecompleto,@idade,@telefone,@telefonerecado,@tratamento,@extracao,@observacao,@status,@data)";
                         cmd.Parameters.AddWithValue("@prontuario", p.N_PRONTUARIO);
                         cmd.Parameters.AddWithValue("@nomecompleto", p.T_NOMECOMPLETO);
                         cmd.Parameters.AddWithValue("@idade", p.N_IDADE);
@@ -74,7 +74,8 @@ namespace Class1 {
                         cmd.Parameters.AddWithValue("@extracao", p.N_EXTRACAO);
                         cmd.Parameters.AddWithValue("@observacao", p.T_OBSERVACAO);
                         cmd.Parameters.AddWithValue("@status", p.T_STATUS);
-                        cmd.ExecuteNonQuery();
+                        cmd.Parameters.AddWithValue("@data", p.T_DATA);
+                    cmd.ExecuteNonQuery();
                     }
                 } catch (Exception ex) {
                     MessageBox.Show("Erro ao cadastrar: O NÚMERO DO PRONTUÁRIO JA CONSTA EM OUTRO CADASTRO \n" + ex.Message);

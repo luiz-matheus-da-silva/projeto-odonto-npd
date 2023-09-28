@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace odonto_csharp {
     class Pacientes 
     {
+        public decimal id;
         public decimal N_PRONTUARIO;
         public string T_NOMECOMPLETO;
         public decimal N_IDADE;
@@ -16,5 +17,6 @@ namespace odonto_csharp {
         public decimal N_EXTRACAO;
         public string T_OBSERVACAO;
         public string T_STATUS;
+        public string T_DATA;
     }
 }

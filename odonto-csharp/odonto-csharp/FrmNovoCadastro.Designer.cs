@@ -87,6 +87,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1050, 678);
             this.panel1.TabIndex = 0;
+            
             // 
             // lblTratamento
             // 
@@ -116,11 +117,13 @@
             // 
             // dateCadastro
             // 
-            this.dateCadastro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateCadastro.CustomFormat = "dd/MM/yyyy";
+            this.dateCadastro.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateCadastro.Location = new System.Drawing.Point(269, 278);
             this.dateCadastro.Name = "dateCadastro";
             this.dateCadastro.Size = new System.Drawing.Size(157, 31);
             this.dateCadastro.TabIndex = 19;
+            
             // 
             // lblDataCadastro
             // 
@@ -229,6 +232,7 @@
             // 
             // cbxTratamento
             // 
+            this.cbxTratamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxTratamento.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxTratamento.FormattingEnabled = true;
             this.cbxTratamento.Items.AddRange(new object[] {
@@ -247,8 +251,7 @@
             this.cbxTratamento.Name = "cbxTratamento";
             this.cbxTratamento.Size = new System.Drawing.Size(690, 30);
             this.cbxTratamento.TabIndex = 11;
-            this.cbxTratamento.Text = "Selecione o Tratamento";
-            this.cbxTratamento.SelectedIndexChanged += new System.EventHandler(this.cbxTratamento_SelectedIndexChanged_1);
+           
             // 
             // mtbTelefoneRecado
             // 
@@ -322,8 +325,7 @@
             this.radioFuncionario.TabStop = true;
             this.radioFuncionario.Text = "Funcionário da UniCesumar";
             this.radioFuncionario.UseVisualStyleBackColor = true;
-            this.radioFuncionario.CheckedChanged += new System.EventHandler(this.radioFuncionario_CheckedChanged);
-            // 
+           
             // radioComunidade
             // 
             this.radioComunidade.AutoSize = true;
@@ -337,7 +339,7 @@
             // 
             // printDocument1
             // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            
             // 
             // FrmNovoCadastro
             // 

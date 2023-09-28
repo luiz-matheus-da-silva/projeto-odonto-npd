@@ -49,7 +49,7 @@ namespace odonto_csharp
 
         private void btnNovoCadastro_Click(object sender, EventArgs e) {
             FrmNovoCadastro fNovoCadastro;
-            fNovoCadastro = new FrmNovoCadastro();
+            fNovoCadastro = new FrmNovoCadastro(0);
             fNovoCadastro.ShowDialog();
         }
 
